@@ -9,7 +9,7 @@ function HOME()
     "ANTIBAN 1",
     "ANTIBAN 2",
     "ÇIKIŞ",
-  }, nil, "GaminggodsTR.")
+  }, nil, "GaminggodsTR.\nİkisini de çalıştırın.")
   if MN == nil then else
     if MN == 1 then antiban() end
     if MN == 2 then Lobby() end
