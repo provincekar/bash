@@ -1,5 +1,6 @@
 function hello()
   gg.setVisible(false)
+  HH = gg.toast("HOŞGELDIN")
   if HH == 1 then
     HOME()
   end
@@ -9,7 +10,7 @@ function HOME()
     "ANTIBAN 1",
     "ANTIBAN 2",
     "ÇIKIŞ",
-  }, nil, "GaminggodsTR.\nİkisini de çalıştırın.")
+  }, nil, "Önce 1 daha sonra 2yi çalıştırın.")
   if MN == nil then else
     if MN == 1 then antiban() end
     if MN == 2 then Lobby() end
@@ -20,12 +21,7 @@ function HOME()
 end
 
 function antiban()
-      gg.clearResults()
-      gg.setRanges(gg.REGION_C_ALLOC)
-      gg.searchNumber("67109633", gg.TYPE_DWORD)
-      gg.getResults(50000)
-      gg.editAll("0", gg.TYPE_DWORD)
-      gg.clearResults()
+
       os.remove("/storage/emulated/0/Android/data/com.tencent.ig/cache")
       os.remove("/storage/emulated/0/tencent")
       os.remove("/storage/emulated/0/MidasOverse")
@@ -42,7 +38,7 @@ function antiban()
       gg.searchNumber("2.2958874e-41;16384D;16384D;16384D;16384D;16384D::24", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
       if gg.getResultCount() == 0 then
       gg.processKill()
-      gg.alert("Antiban aktif olmadı. Oyunu yeniden başlatın.") 
+      gg.alert("Antiban aktif değil oyunu yeniden başlatın.") 
       exit()      
       else
       gg.searchNumber("2.2958874e-41", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
@@ -97,7 +93,7 @@ function antiban()
       gg.addListItems({
       [1] = { address = jz[i].address + 800, flags = 4, freeze = true, value = 70086 }
       })
-      gg.alert('Antiban 1 Aktif ✔️')
+      gg.alert('Antiban aktif ✅')
 end
 end
 end
