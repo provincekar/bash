@@ -9,7 +9,7 @@ function HOME()
   MN = gg.choice({
     "ANTI_BAN 🔥",
     "HIZLI ON/OFF",
-    "ÇIKIŞ ❌",
+    "ÇIKIŞ",
   }, nil, "GaminggodsTR VIP ANTI_BAN")
   if MN == nil then else
     if MN == 1 then antiban() end
@@ -26,11 +26,7 @@ gg.setRanges(gg.REGION_C_ALLOC)
 gg.searchNumber("131842", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(10000)
 gg.editAll("0", gg.TYPE_DWORD)
-if gg.getResultCount() == 0 then
-gg.alert("Değer bulunamadı. Oyunu yeniden başlat yoksa ban yersin!")
-gg.processKill()
-end
-gg.clearResults()
+gg.editAll("0", gg.TYPE_DWORD)
 end
 
 function relog()
